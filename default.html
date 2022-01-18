@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hippie-Juices</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;700;900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Navlink-cart {
+    display: flex;
+}
+#hjs-wrapper .copy-right p {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.Subscribe {
+    display: flex;
+    align-items: center;
+}
+.content-wd .link-section h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.content-wd .link-section .link-ul {
+    list-style: none;
+}
+.star-icon-group {
+    clear: both;
+    list-style: none;
+    display: flex;
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 102px;
+}
+#hjs-wrapper .about-us {
+    background-image: url(images/Layer_4.png);
+    width: 100%;
+    height: 486px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#hjs-wrapper .about-us::before {
+    content: '';
+    width: 100%;
+    height: 486px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#hjs-wrapper .about-us .about-wrapper {
+    z-index: 2;
+}
+#hjs-wrapper .about-us p {
+    width: 697px;
+    height: 76px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 52px;
+}
+#hjs-wrapper .about-us h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 31.59px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 42px;
+}
+.read-more {
+    width: 100px;
+    height: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 46px;
+    text-decoration: none;
+    border-width: 1px;
+    border-color: #f04c31;
+    border-style: solid;
+    padding: 24px 102px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.read-more:hover {
+    background-color: rgba(255,255,255,0.5);
+    color: #000000;
+    border: none;
+}
+.content-wd .card-slider .cards {
+    display: flex;
+}
+.card-area .content-wd .head {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 62px;
+    margin-bottom: 58px;
+}
+#hjs-wrapper .card-area {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 125px 0px;
+}
+.content-wd .text-wrapper p {
+    height: 65px;
+    width: 230px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 27px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.content-wd .right-area h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #10996c;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.content-wd .right-area p {
+    font-family: 'Roboto', sans-serif;
+    color: #828282;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 20px;
+    width: 624px;
+    height: 204px;
+}
+#hjs-wrapper {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.content-wd {
+    margin: auto;
+    width: 1200px;
+}
+#hjs-wrapper .header {
+    height: 135px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul {
+    display: flex;
+}
+.nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.4s ease-in-out;
+}
+.nav ul li:hover {
+    background-color: #11996c;
+}
+	.nav ul li:hover a{
+		color:#fff;
+	}
+.dropdown .drop .drop-list {
+    display: flex;
+    flex-direction: column;
+}
+	.nav ul li:hover  ul.drop-list li a{
+		color: #11996C;
+		padding: 6px;
+	}
+.shops-dropdown {
+    position: relative;
+}
+.cart-login {
+    display: flex;
+    align-items: center;
+    margin-left: 36px;
+}
+.sign-in {
+    border: none;
+    padding: 16px 45px;
+    background-color: #f04c31;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.sign-in:hover {
+    background-color: #e93500;
+}
+.nav li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #11996c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 16px;
+    transition: .4s ease-in-out;
+}
+/*
+.nav1 li a.active {
+    background-color: #11996c;
+    color: #ffffff;
+    padding: 16px 45px;
+}
+*/
+.nav1 li a:hover {
+    color: #ffffff;
+}
+.cart-login a {
+    margin-right: 31px;
+}
+.banner {
+    background-image: url(images/Layer_29.png);
+    width: 100%;
+    height: 529px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+}
+.text-wrapper {
+    width: 385px;
+    height: 136px;
+    vertical-align: middle;
+}
+.text-wrapper h1 .regular {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 44.19px;
+}
+.text-wrapper h1 .bold {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 44px;
+    font-weight: 700;
+}
+.buy-now {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #FFFFFF;
+    padding: 16px 70px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: .4s ease-in-out;
+    border-radius: 5px;
+}
+.buy-now:hover {
+    color: #f04c31;
+    background-color: #FFFFFF;
+}
+#hjs-wrapper .section1 {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 164px 0px;
+}
+.section1 .content-wd .right-area {
+    width: 624px;
+    height: 204px;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+}
+.buy-now2 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #f04c31;
+    border: none;
+    padding: 15px 68px;
+    border-radius: 5px;
+}
+.buy-now2:hover {
+    background-color: #e93500;
+}
+.content-wd .text-wrapper h1 {
+    margin-bottom: 20px;
+}
+.content-wd .head h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #009567;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 46px;
+}
+.content-wd .head .view-all {
+    background-color: #009567;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    padding: 12px 24px;
+}
+.card-area .content-wd .card-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-slider .cards .card1 {
+    width: 333px;
+    height: 448px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 0px 20px;
+}
+.cards .card1 .card-btn {
+    width: 100%;
+    height: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-price {
+    background-color: #f04c31;
+    border: none;
+    width: 223px;
+    height: 48px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-price:hover {
+    background-color: #e93500;
+}
+.cards .card1 span {
+    font-family: 'Roboto', sans-serif;
+    color: #fe6b40;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 70px;
+    padding: 16px 50px;
+    position: absolute;
+    top: 290px;
+    left: 57px;
+}
+#hjs-wrapper .section5 {
+    padding: 120px 0px;
+}
+.section5 .content-wd .welcome {
+    width: 549px;
+    height: 535px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.2);
+    border-top: 13px solid #f04c31;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-wd .welcome h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #fe6b40;
+    font-size: 40.58px;
+    font-weight: 700;
+    line-height: 46px;
+    transform: matrix(0.739, 0, 0, 0.739, 0, 0);
+}
+.welcome-note {
+    width: 225px;
+    height: 31px;
+    font-family: 'Roboto', sans-serif;
+    color: #acacac;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 34px;
+}
+.name-input {
+    width: 346px;
+    height: 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    border-bottom: 1px solid #acacac;
+    outline: none;
+    margin-bottom: 58px;
+}
+.welcome .subscribe .news-letter {
+    font-family: 'Roboto', sans-serif;
+    color: #b7b7b7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 46px;
+    display: inline-block;
+}
+.content-wd .welcome .input-group {
+    display: flex;
+    flex-direction: column;
+}
+.last-input {
+    margin-bottom: 0px;
+}
+.already {
+    font-family: 'Roboto', sans-serif;
+    color: #b7b7b7;
+    font-size: 16px;
+    line-height: 46px;
+    font-weight: 400;
+}
+.rating-head {
+    font-family: 'Roboto', sans-serif;
+    color: #f04c31;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 38px;
+}
+.ratings {
+    width: 631px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.2);
+    padding: 33px 60px;
+    text-align: center;
+}
+.section5-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.ratings .rating-group .rating1 {
+    width: 507px;
+    height: 86px;
+    padding: 13px 19px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.name-review {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    color: #575757;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 23px;
+}
+.date-review {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #737373;
+    font-size: 14px;
+    font-weight: 400;
+}
+.star-icon-group li {
+    margin-right: 5px;
+}
+.review-btn {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    width: 509px;
+    height: 74px;
+    background-color: #f04c31;
+    border: none;
+}
+.footer {
+    width: 100%;
+    background-color: #252525;
+    padding-top: 92px;
+    padding-bottom: 48px;
+}
+.link-ul li a {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 46px;
+    text-decoration: none;
+    padding: 6px;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.followus-icon {
+    display: flex;
+    list-style: none;
+    margin-bottom: 50px;
+}
+.followus-icon li {
+    margin-right: 37px;
+}
+.link-section .followus-icon .last-icon {
+    margin-right: 0px;
+}
+.Subscribe-input {
+    width: 248px;
+    height: 41px;
+    padding: 15px 20px;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    background: none;
+    outline: none;
+    color: #ffffff;
+}
+.Subscribe-btn {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #f04c31;
+    width: 143px;
+    height: 44px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.Subscribe-btn:hover {
+    background-color: #e93500;
+}
+.deals {
+    margin-right: 0px;
+}
+.copy-right {
+    width: 100%;
+    height: 93px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown {
+    justify-content: space-between;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+    transition: 0.4s ease-in-out;
+}
+.shops-dropdown:hover .dropdown {
+    display: flex;
+}
+.drop .drop-list li:hover {
+    background-color: #F4FFF4;
+}
+.drop-list li a:hover {
+    color: #009567;
+}
+.cart-Icon {
+    color: #009567;
+}
+	.drop h2{
+		font-family: Roboto;
+	color: #10996c;
+	font-size: 18px;
+	font-weight: 700;
+	}
+</style>
+</head>
+
+<body>
+<div id="hjs-wrapper">
+  <div class="header content-wd">
+    <div class="logo"> <a href="default.html"> <img src="images/Logo-hippie-juices.png" width="142" height="92" alt=""/> </a> </div>
+    <div class="Navlink-cart">
+      <div class="nav">
+        <ul class="nav1">
+          <li><a href="#" class="active">HOME</a></li>
+          <li class="shops-dropdown"><a href="#">SHOPS</a>
+            <div class="dropdown">
+              <div class="drop">
+                <h2>Best Offers</h2>
+                <ul class="drop-list">
+                  <li><a href="#">Orange Flavour</a></li>
+                  <li><a href="#">Grapes Flavour</a></li>
+                  <li><a href="#">Banana Flavour</a></li>
+                  <li><a href="#">Peach Flavour</a></li>
+                  <li><a href="#">Lemon Flavour</a></li>
+                  <li><a href="#">Beers</a></li>
+                </ul>
+              </div>
+              <div class="drop">
+                <h2>Bundles</h2>
+                <ul class="drop-list">
+                  <li><a href="#">1 Ltr</a></li>
+                  <li><a href="#">500 ml</a></li>
+                  <li><a href="#">200 ml</a></li>
+                  <li><a href="#">100 ml</a></li>
+                  <li><a href="#">View all</a></li>
+                  <li><a href="#">Bulk Order</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">PRODUCTS</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">FIND US</a></li>
+        </ul>
+      </div>
+      <div class="cart-login"> <a href="#"><img class="cart-Icon" src="images/80ffd429-f944-458a-b05e-52545c5594fd.svg" width="22" height="20" alt=""/></a>
+        <button class="sign-in">SIGN UP</button>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="content-wd">
+      <div class="text-wrapper">
+        <h1> <span class="regular">Delight Your  Tastebuds </span> <span  class="bold">Like Never Before</span> </h1>
+        <p> Take 10% Off Your First Purchase
+          with code "DRINKPLANTS" </p>
+        <a href="#" class="buy-now">BUY NOW</a> </div>
+    </div>
+  </div>
+  <div class="section1">
+    <div class="content-wd"> <img src="images/Layer_6.png" width="468" height="335" alt=""/>
+      <div class="right-area">
+        <h1>Hippie Juice</h1>
+        <p>Hippie Juice is a carbonated soft drink brand, originally marketed as an orange soda, now with various flavors of Crush.Crush is a brand of carbonated soft drinks owned and marketed internationally by Keurig Dr Pepper, originally created as an orange soda, Orange Crush. Crush mainly competes with Coca-Cola's Fanta, and Sunkist. </p>
+        <button class="buy-now2">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-area">
+    <div class="content-wd">
+      <div class="head">
+        <h2>OUR PRODUCTS</h2>
+        <button class="view-all">VIEW ALL</button>
+      </div>
+      <div class="card-slider"> <img src="images/Arrow-Left.png" alt=""/>
+        <div class="cards">
+          <div class="card1"> <img src="images/Image.png" width="333" height="350" alt=""/> <span>Orange Flavour</span>
+            <div class="card-btn">
+              <button class="card-price">$35</button>
+            </div>
+          </div>
+          <div class="card1"><img src="images/Apple-Flavour-IMG.png" width="335" height="347" alt=""/> <span>Apple Flavour</span>
+            <div class="card-btn">
+              <button class="card-price">$40</button>
+            </div>
+          </div>
+          <div class="card1"> <img src="images/grape.png" width="333" height="350" alt=""/> <span>Grapes Flavour</span>
+            <div class="card-btn">
+              <button class="card-price">$35</button>
+            </div>
+          </div>
+        </div>
+        <img src="images/Arrow-Right.png" alt=""/> </div>
+    </div>
+  </div>
+  <div class="about-us">
+    <div class="about-wrapper">
+      <h2>ABOUT US</h2>
+      <p>Oranges are round orange-coloured fruit that grow on a tree which can reach 10 metres (33 ft) high. Orange trees have dark green shiny leaves and small white flowers with five petals. The flowers smell very sweet which attracts many bees</p>
+      <a href="#" class="read-more">READ MORE</a> </div>
+  </div>
+  <div class="section5">
+    <div class="content-wd section5-wrapper">
+      <div class="welcome">
+        <h2>WELCOME</h2>
+        <p class="welcome-note">to our community.In order to sign up
+          Please fill out all the fields below </p>
+        <div class="input-group">
+          <input type="text" placeholder="First Name" class="name-input">
+          <input type="text" placeholder="Last Name" class="name-input">
+          <input type="email" placeholder="Email" class="name-input last-input">
+        </div>
+        <div class="subscribe">
+          <input type="checkbox" class="check">
+          <p class="news-letter">Subscribe our newsletter</p>
+        </div>
+        <button class="sign-in" style="display: block; padding: 22px 51px;">SIGN IN</button>
+        <div class="already">
+          <p>Already have an account? <a href="#" style="color: #f04c31; font-weight: 500;">Sign In</a> </p>
+        </div>
+      </div>
+      <div class="ratings">
+        <h2 class="rating-head">GIVE YOUR  RATING</h2>
+        <div class="rating-group">
+          <div class="rating1"> <img src="images/Layer_9.png" width="61" height="61" alt="" style="float: left;"/> <span class="name-review">Hareesh Krishnan</span> <span class="date-review">23 Aug 2021</span>
+            <ul class="star-icon-group">
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+            </ul>
+          </div>
+          <div class="rating1"> <img src="images/Layer_10.png" width="61" height="61" alt="" style="float: left;"/> <span class="name-review">Sreekanth</span> <span class="date-review">14 Sep 2021</span>
+            <ul class="star-icon-group">
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+            </ul>
+          </div>
+          <div class="rating1"> <img src="images/Layer_13.png" width="61" height="61" alt="" style="float: left;"/> <span class="name-review">Evlin</span> <span class="date-review">10 Nov 2021</span>
+            <ul class="star-icon-group">
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+              <li><img src="images/Layer_12.png" width="13" height="13" alt=""/></li>
+            </ul>
+          </div>
+        </div>
+        <button class="review-btn">SEE MORE REVIEWS</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-wrapper content-wd">
+      <div class="link-section">
+        <h2>QUICK LINKS</h2>
+        <ul class="link-ul">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Find Us</a></li>
+        </ul>
+      </div>
+      <div class="link-section">
+        <h2>Support</h2>
+        <ul class="link-ul">
+          <li><a href="#">Review</a></li>
+          <li><a href="#">Product Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Ratings</a></li>
+        </ul>
+      </div>
+      <div class="link-section">
+        <h2>Follow Us</h2>
+        <ul class="followus-icon">
+          <li><a href="#"><img src="images/Youtube-Icon.png" alt=""/></a></li>
+          <li><a href="#"><img src="images/Twitter-Icon.png" alt=""/></a></li>
+          <li><a href="#"><img src="images/FB-Icon.png" alt=""/></a></li>
+          <li class="last-icon"><a href="#"><img src="images/LinkedIn-Icon.png" alt=""/></a></li>
+        </ul>
+        <div class="play-store"> <img src="images/Play-Store_App-Store.png" width="144" height="93" alt=""/> </div>
+      </div>
+      <div class="link-section deals">
+        <h2>Don’t Miss Our Deals and Offers</h2>
+        <div class="Subscribe">
+          <input type="search" class="Subscribe-input" placeholder="Subscribe Here...">
+          <button class="Subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy-right">
+    <p>Copyrights 2018-2021 All rights reserved</p>
+  </div>
+</div>
+</body>
+</html>

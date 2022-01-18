@@ -1,0 +1,17 @@
+@charset "utf-8";
+.tw-icon,.fb-icon,.in-icon{
+    display: block;
+    background-image:url("images/Layer_67.png");
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+}
+.tw-icon{
+	background-position: 0%;
+}
+.fb-icon{
+	background-position: -63px 0%;
+}
+.in-icon{
+	background-position:-128px 0%;
+}

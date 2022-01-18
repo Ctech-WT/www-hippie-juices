@@ -60,7 +60,7 @@
 		  <a href="#" class="search"><img class="cart-Icon" src="images/search.png" width="22" height="20" alt=""/></a> 
 		  <div id="search-box">
 		  <form action="#">
-			  <label for="search" class="search-wrapper">
+			  <label for="search">
 				  <input name="search" type="search" required="required" placeholder="Search" id="search" autocomplete="off">
 				  <input type="submit" value="search">
 			  </label>
@@ -248,16 +248,8 @@
     <p>Copyrights 2018-2021 All rights reserved</p>
   </div>
 </div>
-	<script>
-	$(document).ready(function(){
-		$('.search').on("click", function(){
-			$("#search-box").fadeToggle();
-		});
-
-	});
-	</script>
 <!-- InstanceBeginEditable name="EditRegion4" --> 
-<script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+<script src="scripts/owl.carousel.min.js"></script> 
 <script>
 	$(document).ready(function(){
       	$('.owl-carousel.banner').owlCarousel({
@@ -271,21 +263,43 @@
 		$('.prev-arrow').click(function() {
             $('.owl-carousel').trigger('prev.owl.carousel');
         });
-        $('.cards.owl-carousel').owlCarousel({
+        $('.owl-carousel').owlCarousel({
             loop:true,
+            margin:0,
             items: 3
         });
         $('.nextcard').click(function() {
-            $('.cards.owl-carousel').trigger('next.owl.carousel');
+            $('.owl-carousel').trigger('next.owl.carousel');
         });
         // Go to the previous item
         $('.prevcard').click(function() {
             // With optional speed parameter
             // Parameters has to be in square bracket '[]'
-            $('.cards.owl-carousel').trigger('prev.owl.carousel', [300]);
+            $('.owl-carousel').trigger('prev.owl.carousel', [300]);
         });
 	});
 	</script> 
 <!-- InstanceEndEditable -->
+	<script>
+	$(document).ready(function(){
+		$('.search').on("click", function(){
+			$("#search-box").fadeToggle();
+		});
+		 $('.owl-carousel').owlCarousel({
+             loop:true,
+            margin:0,
+            items: 3
+        });
+        $('.nextcard').click(function() {
+            $('.owl-carousel').trigger('next.owl.carousel');
+        });
+        // Go to the previous item
+        $('.prevcard').click(function() {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            $('.owl-carousel').trigger('prev.owl.carousel', [300]);
+        });
+	});
+	</script>
 </body>
 <!-- InstanceEnd --></html>
