@@ -176,6 +176,7 @@
   padding: 6px 0px;
   margin: 0px 10px;
   transition: 0.4s ease-in-out;
+	border-bottom: 3px solid #333;
 }
 .nav ul li:hover {
   border-bottom: 3px solid #11996C;
