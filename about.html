@@ -19,10 +19,10 @@
 
 <body>
 <div id="hjs-wrapper">
-  <div class="header content-wd">
+  <header class="header content-wd">
     <div class="logo"> <a href="index.html"> <img src="images/Logo-hippie-juices.png" width="142" height="92" alt=""/></a></div>
     <div class="Navlink-cart">
-      <div class="nav">
+      <nav class="nav">
         <ul class="nav1">
           <li class="active"><a href="index.html">HOME</a></li>
           <li class="shops-dropdown"><a href="shop.html">SHOPS</a>
@@ -42,11 +42,11 @@
                 <h2>Bundles</h2>
                 <ul class="drop-list">
                   <li><a href="bundles.html">1 Ltr</a></li>
-                  <li><a href="default.html">500 ml</a></li>
-                  <li><a href="default.html">200 ml</a></li>
-                  <li><a href="default.html">100 ml</a></li>
+                  <li><a href="bundles.html">500 ml</a></li>
+                  <li><a href="bundles.html">200 ml</a></li>
+                  <li><a href="bundles.html">100 ml</a></li>
                   <li><a href="product.html">View all</a></li>
-                  <li><a href="default.html">Bulk Order</a></li>
+                  <li><a href="bundles.html">Bulk Order</a></li>
                 </ul>
               </div>
             </div>
@@ -55,22 +55,69 @@
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="findus.html">FIND US</a></li>
         </ul>
-      </div>
-      <div class="cart-login"> 
-		  <a href="#" class="search"><img class="cart-Icon" src="images/search.png" width="22" height="20" alt=""/></a> 
-		  <div id="search-box">
-		  <form action="#">
-			  <label for="search">
-				  <input name="search" type="search" required="required" placeholder="Search" id="search" autocomplete="off">
-				  <input type="submit" value="search">
-			  </label>
-		    </form>
-		  </div>
-		  <a href="#"><img class="cart-Icon" src="images/shop-bag.png" width="22" height="20" alt=""/></a>
-        <a href="#" class="sign-in">SIGN UP</a>
-      </div>
+      </nav>
+      <div class="cart-login"> <a href="#" class="search"><img class="cart-Icon" src="images/search.png" width="22" height="20" alt=""/></a>
+        <div id="search-box">
+          <form action="#">
+            <label for="search" class="search-wrapper">
+              <input name="search" type="search" required="required" placeholder="Search" id="search" autocomplete="off">
+              <input type="submit" value="search">
+            </label>
+          </form>
+        </div>
+        <div class="cart-wrapper">
+			<a href="#" class="cart-icon-wrapper"> 
+				<span class="cart-load">3 </span> 
+				<img class="cart-Icon" src="images/shop-bag.png" width="22" height="20" alt=""/> 
+			</a>
+          <div class="cart-drop">
+            <div class="cart-item">
+				 <a href="#">
+              <div class="cart-item1">
+                <div class="cart-image"><img src="images/Image.png" width="100%" alt=""></div>
+                <div class="cart-details"> 
+                  <span>Orange Flavour</span> 
+                  <b>$15.00</b> 
+                  </div>
+              </div>
+               </a>
+			 <button><img src="images/delete%20(1).png" alt="" width="20px"  height="20px" ></button>
+            </div>
+			   <div class="cart-item">
+				 <a href="#">
+              <div class="cart-item1">
+                <div class="cart-image"><img src="images/Pea.png" width="100%" alt=""></div>
+                <div class="cart-details"> 
+                  <span>Orange Flavour</span> 
+                  <b>$15.00</b> 
+                  </div>
+              </div>
+               </a>
+			 <button><img src="images/delete%20(1).png" alt="" width="20px"  height="20px" ></button>
+            </div>
+			   <div class="cart-item">
+				 <a href="#">
+              <div class="cart-item1">
+                <div class="cart-image"><img src="images/Apple-Flavour-IMG.png" width="100%" alt=""></div>
+                <div class="cart-details"> 
+                  <span>Orange Flavour</span> 
+                  <b>$15.00</b> 
+                  </div>
+              </div>
+               </a>
+		    <button><img src="images/delete%20(1).png" alt="" width="20px"  height="20px" ></button>
+            </div>
+			  <div class="cart-price">
+			  <b>Total</b>
+			  <b>$45.00</b>
+			  </div>
+			  <a href="#" class="cart-view white-grey-hover">View Cart</a>
+			  <button class="cart-checkout white-orange-hover">Checkout</button>
+			</div>
+        </div>
+        <a href="#" class="sign-in">SIGN UP</a> </div>
     </div>
-  </div>
+  </header>
   <!-- InstanceBeginEditable name="hjs-EditRegion1" -->
  <div class="about-banner">
    <div class="about-banner-cnt">
@@ -96,7 +143,7 @@
 	</div>
  
 <!-- InstanceEndEditable -->
-  <div class="footer">
+  <footer class="footer">
     <div class="footer-wrapper content-wd">
       <div class="link-section">
         <h2>QUICK LINKS</h2>
@@ -136,34 +183,23 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
   <div class="copy-right">
     <p>Copyrights 2018-2021 All rights reserved</p>
   </div>
 </div>
-<!-- InstanceBeginEditable name="EditRegion4" -->
-	
-	<!-- InstanceEndEditable -->
-	<script>
+<script>
 	$(document).ready(function(){
 		$('.search').on("click", function(){
 			$("#search-box").fadeToggle();
 		});
-		 $('.owl-carousel').owlCarousel({
-             loop:true,
-            margin:0,
-            items: 3
-        });
-        $('.nextcard').click(function() {
-            $('.owl-carousel').trigger('next.owl.carousel');
-        });
-        // Go to the previous item
-        $('.prevcard').click(function() {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
-            $('.owl-carousel').trigger('prev.owl.carousel', [300]);
-        });
+		$('.cart-icon-wrapper').on("click", function(){
+			$(".cart-drop").fadeToggle();
+		});
 	});
-	</script>
+	</script> 
+<!-- InstanceBeginEditable name="EditRegion4" -->
+	
+	<!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>

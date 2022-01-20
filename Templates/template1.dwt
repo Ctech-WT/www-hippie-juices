@@ -42,11 +42,11 @@
                 <h2>Bundles</h2>
                 <ul class="drop-list">
                   <li><a href="../bundles.html">1 Ltr</a></li>
-                  <li><a href="../default.html">500 ml</a></li>
-                  <li><a href="../default.html">200 ml</a></li>
-                  <li><a href="../default.html">100 ml</a></li>
+                  <li><a href="../bundles.html">500 ml</a></li>
+                  <li><a href="../bundles.html">200 ml</a></li>
+                  <li><a href="../bundles.html">100 ml</a></li>
                   <li><a href="../product.html">View all</a></li>
-                  <li><a href="../default.html">Bulk Order</a></li>
+                  <li><a href="../bundles.html">Bulk Order</a></li>
                 </ul>
               </div>
             </div>
@@ -56,19 +56,66 @@
           <li><a href="../findus.html">FIND US</a></li>
         </ul>
       </nav>
-      <div class="cart-login"> 
-		  <a href="#" class="search"><img class="cart-Icon" src="../images/search.png" width="22" height="20" alt=""/></a> 
-		  <div id="search-box">
-		  <form action="#">
-			  <label for="search" class="search-wrapper">
-				  <input name="search" type="search" required="required" placeholder="Search" id="search" autocomplete="off">
-				  <input type="submit" value="search">
-			  </label>
-		    </form>
-		  </div>
-		  <a href="#"><img class="cart-Icon" src="../images/shop-bag.png" width="22" height="20" alt=""/></a>
-        <a href="#" class="sign-in">SIGN UP</a>
-      </div>
+      <div class="cart-login"> <a href="#" class="search"><img class="cart-Icon" src="../images/search.png" width="22" height="20" alt=""/></a>
+        <div id="search-box">
+          <form action="#">
+            <label for="search" class="search-wrapper">
+              <input name="search" type="search" required="required" placeholder="Search" id="search" autocomplete="off">
+              <input type="submit" value="search">
+            </label>
+          </form>
+        </div>
+        <div class="cart-wrapper">
+			<a href="#" class="cart-icon-wrapper"> 
+				<span class="cart-load">3 </span> 
+				<img class="cart-Icon" src="../images/shop-bag.png" width="22" height="20" alt=""/> 
+			</a>
+          <div class="cart-drop">
+            <div class="cart-item">
+				 <a href="#">
+              <div class="cart-item1">
+                <div class="cart-image"><img src="../images/Image.png" width="100%" alt=""></div>
+                <div class="cart-details"> 
+                  <span>Orange Flavour</span> 
+                  <b>$15.00</b> 
+                  </div>
+              </div>
+               </a>
+			 <button><img src="../images/delete (1).png" alt="" width="20px"  height="20px" ></button>
+            </div>
+			   <div class="cart-item">
+				 <a href="#">
+              <div class="cart-item1">
+                <div class="cart-image"><img src="../images/Pea.png" width="100%" alt=""></div>
+                <div class="cart-details"> 
+                  <span>Orange Flavour</span> 
+                  <b>$15.00</b> 
+                  </div>
+              </div>
+               </a>
+			 <button><img src="../images/delete (1).png" alt="" width="20px"  height="20px" ></button>
+            </div>
+			   <div class="cart-item">
+				 <a href="#">
+              <div class="cart-item1">
+                <div class="cart-image"><img src="../images/Apple-Flavour-IMG.png" width="100%" alt=""></div>
+                <div class="cart-details"> 
+                  <span>Orange Flavour</span> 
+                  <b>$15.00</b> 
+                  </div>
+              </div>
+               </a>
+		    <button><img src="../images/delete (1).png" alt="" width="20px"  height="20px" ></button>
+            </div>
+			  <div class="cart-price">
+			  <b>Total</b>
+			  <b>$45.00</b>
+			  </div>
+			  <a href="#" class="cart-view white-grey-hover">View Cart</a>
+			  <button class="cart-checkout white-orange-hover">Checkout</button>
+			</div>
+        </div>
+        <a href="#" class="sign-in">SIGN UP</a> </div>
     </div>
   </header>
   <!-- TemplateBeginEditable name="hjs-EditRegion1" -->
@@ -222,16 +269,16 @@
     <p>Copyrights 2018-2021 All rights reserved</p>
   </div>
 </div>
-	<script>
+<script>
 	$(document).ready(function(){
 		$('.search').on("click", function(){
 			$("#search-box").fadeToggle();
 		});
-
+		$('.cart-icon-wrapper').on("click", function(){
+			$(".cart-drop").fadeToggle();
+		});
 	});
-	</script>
-<!-- TemplateBeginEditable name="EditRegion4" -->
-	
-	<!-- TemplateEndEditable -->
+	</script> 
+<!-- TemplateBeginEditable name="EditRegion4" --> <!-- TemplateEndEditable -->
 </body>
 </html>
