@@ -61,59 +61,39 @@
           <form action="#">
             <label for="search" class="search-wrapper">
               <input name="search" type="search" required="required" placeholder="Search" id="search" autocomplete="off">
-              <input type="submit" value="search">
             </label>
+            <input type="submit" value="search">
           </form>
         </div>
-        <div class="cart-wrapper">
-			<a href="#" class="cart-icon-wrapper"> 
-				<span class="cart-load">3 </span> 
-				<img class="cart-Icon" src="../images/shop-bag.png" width="22" height="20" alt=""/> 
-			</a>
+        <div class="cart-wrapper"> <a href="#" class="cart-icon-wrapper"> <span class="cart-load">3 </span> <img class="cart-Icon" src="../images/shop-bag.png" width="22" height="20" alt=""/> </a>
           <div class="cart-drop">
-            <div class="cart-item">
-				 <a href="#">
+            <div class="cart-item"> <a href="#">
               <div class="cart-item1">
-                <div class="cart-image"><img src="../images/Image.png" width="100%" alt=""></div>
-                <div class="cart-details"> 
-                  <span>Orange Flavour</span> 
-                  <b>$15.00</b> 
-                  </div>
+                <div class="cart-image"><img src="../images/Image.png" alt="" width="50" height="50"></div>
+                <div class="cart-details"> <span>Orange Flavour</span> <b>$15.00</b> </div>
               </div>
-               </a>
-			 <button><img src="../images/delete (1).png" alt="" width="20px"  height="20px" ></button>
+              </a>
+              <button><img src="../images/delete.png" alt="" width="20"  height="20" ></button>
             </div>
-			   <div class="cart-item">
-				 <a href="#">
+            <div class="cart-item"> <a href="#">
               <div class="cart-item1">
-                <div class="cart-image"><img src="../images/Pea.png" width="100%" alt=""></div>
-                <div class="cart-details"> 
-                  <span>Orange Flavour</span> 
-                  <b>$15.00</b> 
-                  </div>
+                <div class="cart-image"><img src="../images/Pea.png" alt="" width="50" height="50"></div>
+                <div class="cart-details"> <span>Orange Flavour</span> <b>$15.00</b> </div>
               </div>
-               </a>
-			 <button><img src="../images/delete (1).png" alt="" width="20px"  height="20px" ></button>
+              </a>
+              <button><img src="../images/delete.png" alt="" width="20"  height="20" ></button>
             </div>
-			   <div class="cart-item">
-				 <a href="#">
+            <div class="cart-item"> <a href="#">
               <div class="cart-item1">
-                <div class="cart-image"><img src="../images/Apple-Flavour-IMG.png" width="100%" alt=""></div>
-                <div class="cart-details"> 
-                  <span>Orange Flavour</span> 
-                  <b>$15.00</b> 
-                  </div>
+                <div class="cart-image"><img src="../images/Apple-Flavour-IMG.png" alt="" width="50" height="50"></div>
+                <div class="cart-details"> <span>Orange Flavour</span> <b>$15.00</b> </div>
               </div>
-               </a>
-		    <button><img src="../images/delete (1).png" alt="" width="20px"  height="20px" ></button>
+              </a>
+              <button><img src="../images/delete.png" alt="" width="20"  height="20" ></button>
             </div>
-			  <div class="cart-price">
-			  <b>Total</b>
-			  <b>$45.00</b>
-			  </div>
-			  <a href="../cart-page.html" class="cart-view white-grey-hover">View Cart</a>
-			  <a href="../cart-page.html" class="cart-checkout orange-orange-hover">Checkout</a>
-			</div>
+            <div class="cart-price"> <b>Total</b> <b>$45.00</b> </div>
+            <a href="../cart-page.html" class="cart-view white-grey-hover">View Cart</a> 
+			  <a href="https://developer.icicibank.com/#/index" target="_blank" class="cart-checkout orange-orange-hover">Checkout</a> </div>
         </div>
         <a href="#" class="sign-in">SIGN UP</a> </div>
     </div>
