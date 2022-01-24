@@ -331,7 +331,7 @@
   position: relative;
   text-align: center;
   margin: 0px 20px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .cards .card1 .card-btn {
   width: 100%;
@@ -948,6 +948,7 @@ hr {
   outline: none;
   border-bottom: 1px solid #c3c3c3;
   padding: 7px;
+	cursor: pointer;
 }
 label {
   font-family: 'Roboto', sans-serif;
@@ -961,8 +962,9 @@ label {
   display: flex;
   border-radius: 5px;
 }
-.search-wrapper{
-box-shadow: 0.2px 0.5px 2px #858585;	
+.search-wrapper {
+    display: block;
+    position: static;
 }
 .text-area {
   width: 428px;
@@ -990,14 +992,18 @@ box-shadow: 0.2px 0.5px 2px #858585;
 .snd-btn:hover {
   background-color: #e93500;
 }
-.input input:focus {
+.input input:focus,
+.input input:valid~ label {
   border-bottom-color: #F04C31;
+	background-color: transparent;
 }
-.input input:focus ~ label {
+.input input:focus~ label,
+.input input:valid~ label {
   font-size: 12px;
   font-weight: 200;
   color: #F04C31;
   top: -14px;
+	background-color: transparent;
 }
 .input .text-area:focus ~ label {
   font-size: 12px;
@@ -1212,13 +1218,13 @@ box-shadow: 0.2px 0.5px 2px #858585;
   display: flex;
 }
 #search-box form input[type="search"] {
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #c3c3c3;
-  padding: 7px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  box-shadow: 1px -1px 0px 2px rgba(0, 0, 0, 0.5px);
+ border: none;
+    outline: none;
+    /* border-bottom: 1px solid #c3c3c3; */
+    padding: 7px;
+     border-top-left-radius: 5px; 
+    border-bottom-left-radius: 5px;
+    box-shadow: 1px -1px 0px 2px rgba(0, 0, 0, 0.5px);
 }
 #search-box form input[type="submit"] {
   border: none;
@@ -1401,4 +1407,35 @@ box-shadow: 0.2px 0.5px 2px #858585;
 	font-weight: 500;
 	margin-top: 20px;
 	transition: 0.4s ease-in-out;
+}
+
+.sign-in-section {
+	background-image:url("../images/Gradient_Fill_1.png");
+	height: 693px;
+	width:100%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	display: flex;
+	
+}
+
+.right-sign-in {
+		display: flex;
+	justify-content: flex-end;
+	align-items:center;
+	padding: 0px 50px;
+}
+
+.sign-in-background {
+       width: 549px;
+    height: 569px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
 }
