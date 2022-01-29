@@ -6,6 +6,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 .Navlink-cart {
   display: flex;
 }
@@ -1486,4 +1487,118 @@ label {
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 	font-family: 'Roboto', sans-serif;
 
+}
+
+.product-section {
+	width: 100%;
+	background-color: #f4f4f5;
+	padding-bottom:74px;
+}
+
+.product-section-head {
+font-family: Poppins;
+	color: #10996c;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 46px;	
+	margin-top: 50px;
+}
+
+.product-name {
+	font-family: Poppins;
+	color: #5a5a5a;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 0px;
+	margin-top: 20px;
+}
+.product-wrapper{
+	width: 225px;
+	height: 380px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	padding-bottom:26px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.19);
+	transition: 0.4s ease-in-out;
+	
+}
+.product-wrapper:hover{
+	transform: scale(1.02);
+}
+
+.product-buy {
+	width:100%;
+	display:flex;
+	align-items: center;
+	padding: 0px 18px;
+	margin-top: 12px;
+}
+.product-buy a{
+	border-radius: 5px;
+	border:1px solid #f04c31;
+	text-decoration: none;
+	display: block;
+	background-color: #ffffff;
+	padding: 10px 26px;
+	color:#F04C31;
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 500;
+	
+}
+
+.product-star {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	
+}
+.product-star li{
+	margin-right: 5px;
+}
+.product-rates-amount {
+	display:flex;
+	padding: 0px 20px;
+	justify-content: space-between;
+	margin-top: 20px;
+	width: 100%;
+	align-items: center;
+	
+}
+
+.product-cart-icon{
+	border-radius: 5px;
+	background-color: #f04c31;
+	padding: 5px 15px;
+	border: none;
+	outline:none;
+	margin-left:12px;
+	cursor: pointer;
+}
+
+.product-price {
+	font-family: "poppins";
+	color: #5f5f5f;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.product-row {
+	display: flex;
+	justify-content: space-between;
+	padding: 45px 0px 30px 0px;
+}
+.product-section-banner {
+	width: 100%;
+	height: 500px;
+	background:url("../images/orange-juice.jpg");
+/*	background-attachment: fixed;*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	place-items:center;
 }
