@@ -1680,6 +1680,9 @@ display: flex;
   font-weight: 500;
   line-height: 30px;
 }
+.return-policy p{
+	margin: 6px 0px;
+}
 .return-policy h1 , .terms h1{
 	margin-bottom: 20px;
 	font-size: 28px;
