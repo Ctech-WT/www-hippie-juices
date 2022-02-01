@@ -1623,10 +1623,10 @@ font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 }
 .privacy-policy-wrapper ul li{
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 24px;
 	font-weight: 400;
-	padding-bottom: 12px;
+	margin:6px 0px 6px 44px;
 }
 .privacy-policy-wrapper h3 , .privacy-section h3{
 	font-size: 24px;
@@ -1648,13 +1648,12 @@ font-family: 'Poppins', sans-serif;
 .privacy-policy {
 	display: flex;
 	text-align: justify;
+	word-break: break-all;
 }
 
 .privacy-section {
 	margin-top: 100px;
 	padding: 0px 20px;
-	overflow-y: scroll;
-	height: 400px;
 	display: flex;
 	flex-direction: column;
 	row-gap: 20px;
@@ -1701,4 +1700,11 @@ display: flex;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
+	word-break: break-all;
+}
+.terms ol{
+	margin-left: 40px;
+}
+.terms ol li{
+	margin: 6px 0px;
 }
