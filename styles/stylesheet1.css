@@ -6,7 +6,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+body{
+	min-width: 1200px;
+}
 .Navlink-cart {
   display: flex;
 }
