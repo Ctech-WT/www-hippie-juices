@@ -439,7 +439,6 @@
 	</script> 
 <!-- InstanceBeginEditable name="EditRegion4" -->
 	<script src="scripts/owl.carousel.min.js"></script> 
-
 	<script>
 		
 	$(document).ready(function(){
@@ -447,6 +446,15 @@
              loop:true,
             margin:0,
             items: 3
+        });
+		 $('.nextcard').click(function() {
+            $('.owl-carousel').trigger('next.owl.carousel');
+        });
+        // Go to the previous item
+        $('.prevcard').click(function() {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            $('.owl-carousel').trigger('prev.owl.carousel', [300]);
         });
 	})
 	</script>
